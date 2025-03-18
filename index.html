@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blend Caravan - Mobile Café</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to Blend Caravan</h1>
-        <p>Your go-to mobile café for ethically sourced coffee and tea.</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ananya Gupta</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#intro">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Blend Caravan is a mobile café that brings high-quality, ethically sourced coffee and tea to your community.</p>
-    </section>
+  <!-- Professional Introduction -->
+  <section id="intro" class="intro-section">
+    <div class="intro-overlay">
+      <div class="text-center text-white">
+        <h1>I am a Graphic Designer</h1>
+        <p style="color: #000000;">who believes in the power of minimal, impactful design.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <ul>
-            <li>Espresso</li>
-            <li>Iced coffee</li>
-            <li>Cold Brew</li>
-            <li>Herbal Teas</li>
-        </ul>
-    </section>
+  <!-- Resume Section -->
+  <section id="resume" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>Download my resume below:</p>
+      <a href="Resume.jpg" target="_blank" class="btn btn-primary">Download Resume</a>
+    </div>
+  </section>
 
-    <section id="events">
-        <h2>Upcoming Events</h2>
-        <p>Find us at local markets, festivals, and pop-up events.</p>
-    </section>
+  <!-- Projects Showcase -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects Showcase</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <a href="scroll insta naturals.pdf" target="_blank" class="btn btn-primary">Project 1</a>
+            <img src="post4.png" class="card-img-top" alt="Project Cover">
+             <div class="card-body">
+              <p class="card-text">Created a campaign for Naturals Ice Cream with a poster, newspaper ad, and Instagram post, highlighting the "Taste the Real" message using vibrant visuals and minimal text to showcase natural ingredients and real fruits.</p>
+            </div>
+          </div>
+        </div>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: contact@blendcaravan.com</p>
-        <p>Instagram: @blendcaravan</p>
-    </section>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="magazineeeee.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Brief description of Project 2.</p>
+            </div>
+          </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Blend Caravan. All rights reserved.</p>
-    </footer>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Brief description of Project 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:your.email@example.com">ananya.gupta9405@gmail.com</a></p>
+      <p>Behance: <a href="https://www.behance.net/ananyagupta094" target="_blank">ananyagupta094</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Ananya Gupta. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

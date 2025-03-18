@@ -1,123 +1,68 @@
-
-body {
-    font-family: 'Poppins', sans-serif;
+/* General Styles */
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4ece6;
-    color: #4a3f35;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #03284e; 
+}
 
-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://source.unsplash.com/1600x900/?coffee,shop');
+.navbar-brand, .nav-link {
+    color: #39bdde; /* Light Gray */
+}
+
+.nav-link:hover {
+    color: #3498db; /* Bright Blue */
+}
+
+/* Background Image */
+.background-image {
+    background-image: url(me1.jpg); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    text-align: center;
-    color: white;
-    padding: 60px 20px;
+    background-attachment: fixed; /* Keeps the background image static */
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #ffffff; 
+    padding: right 40px;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
+
+
+.content {
+    position: relative;
+    z-index: 1; /* Places the content above the overlay */
+    text-align: center;
+}
+
+h1 {
     font-size: 3rem;
-    margin: 0;
+    margin-bottom: 10px;
 }
+p {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size-adjust: initial;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: right;
 
-header p {
-    font-size: 1.2rem;
-    font-weight: 300;
+
 }
-
-
-nav {
-    background: #5a3825;
-    text-align: center;
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #d9a066;
-}
-
-
+/* Projects Section */
 section {
-    padding: 50px 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
+    padding: 50px 0;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #5a3825;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 1.1rem;
-    font-weight: 300;
+    font-size: 2
 }
 
 
-#menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-#menu ul li {
-    background-color: #d9a066;
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: white;
-    transition: transform 0.3s ease;
-}
-
-#menu ul li:hover {
-    transform: scale(1.1);
-    background-color: #b27d50;
-}
-
-
-.contact-info {
-    background: #e2d4c3;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-.contact-info p {
-    margin: 5px 0;
-}
-
-
-footer {
-    background-color: #5a3825;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
