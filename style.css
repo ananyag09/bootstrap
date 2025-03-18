@@ -1,68 +1,208 @@
-/* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
 
-/* Navigation Bar Styles */
-.navbar {
-    background-color: #03284e; 
-}
-
-.navbar-brand, .nav-link {
-    color: #39bdde; /* Light Gray */
-}
-
-.nav-link:hover {
-    color: #3498db; /* Bright Blue */
-}
-
-/* Background Image */
-.background-image {
-    background-image: url(me1.jpg); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Keeps the background image static */
-    position: relative;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    color: #ffffff; 
-    padding: right 40px;
-}
-
-
-
-.content {
-    position: relative;
-    z-index: 1; /* Places the content above the overlay */
-    text-align: center;
-}
-
-h1 {
+  h1 {
+    color: #000000;  /* Change this hex to your desired color */
     font-size: 3rem;
-    margin-bottom: 10px;
-}
-p {
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size-adjust: initial;
-    font-weight: bolder;
-    color: #ffffff;
-    text-align: right;
-
-
-}
-/* Projects Section */
-section {
-    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
-h2 {
-    font-size: 2
+  
+ h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    font-weight: 700;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #21618c;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #2c3e50;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #c9d8f4;
+  }
+  
+  .nav-link {
+    color: #c9d8f4 !important;
+    font-size: 1.1rem;
+    padding-right: 20px;
+  }
+  
+  .nav-link:hover {
+    color: #1abc9c !important;
+  }
+  
+/* Intro Section with Background Image */
+.intro-section {
+  background: url('me1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* Overlay for dim effect */
+.intro-overlay {
+  background-color: rgba(255, 239, 239, 0.5); /* Adjust darkness */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Vertical center */
+  align-items: flex-end;   /* Text to the right */
+  padding: 50px;
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+/* Intro Text Styling */
+.intro-text {
+  text-align: right;
+  max-width: 500px;
+}
+
+.intro-text h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.3rem;
+  color: #000000;
 }
 
 
+  
+  /* Profile Image Styling */
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  /* Resume Section */
+  #resume {
+    background-color: #ffffff;
+  }
+  
+  #resume h2 {
+    font-size: 2.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #9ae8f3;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2c3e50;
+  }
+  
+  /* Projects Section */
+  #projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.4rem;
+    color: #34495e;
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #f0f0f0;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+  }
+  
+  #contact p a {
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  #contact p a:hover {
+    color: #000000;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2c3e50;
+    color: #dedede;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Smooth transitions */
+  * {
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .intro-overlay h1 {
+      font-size: 2.5rem;
+    }
+  
+    .intro-overlay p {
+      font-size: 1.1rem;
+    }
+  
+    .profile-img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
